@@ -4,9 +4,11 @@ end
 getgenv().MercenariesLoaded = true
 
 if not game:IsLoaded() then
-	game.Loaded:Wait()
+    game.Loaded:Wait()
 end
 
-task.wait(math.random())
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/kosowa/zzz/refs/heads/main/spabMain"))()
-end
+task.wait(math.random(1, 5))
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/kosowa/zzz/refs/heads/main/spabMain"
+))()
